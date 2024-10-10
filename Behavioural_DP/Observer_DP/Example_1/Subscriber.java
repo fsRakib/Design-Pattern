@@ -9,8 +9,8 @@ public class Subscriber implements Observer {
     }
 
     @Override
-    public void notified() {
-        System.out.println("Hello " + this.name +",  a new video upload : notification");
+    public void notified(String title) {
+        System.out.println("Hello " + this.name + ", a new video " + title + " upload : notification");
     }
 
 }

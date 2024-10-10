@@ -8,6 +8,8 @@ public class Main {
 
         youtubeChannel.subscribe(aman);
         youtubeChannel.subscribe(rakib);
-        youtubeChannel.notifyChanges();
+
+        youtubeChannel.notifyChanges("React js");
+        youtubeChannel.notifyChanges("Vue js");
     }
 }

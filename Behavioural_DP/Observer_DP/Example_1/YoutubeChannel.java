@@ -7,9 +7,9 @@ public class YoutubeChannel implements Subject {
     List<Observer> subscribers = new ArrayList<>();
 
     @Override
-    public void notifyChanges() {
+    public void notifyChanges(String title) {
         for (Observer ob : this.subscribers) {
-            ob.notified();
+            ob.notified(title);
         }
     }
 
